@@ -1,0 +1,65 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+form input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.social-media a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  margin: 0 16px;
+  border-radius: 50%;
+  background-color: #ccc;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.social-media a:hover {
+  @apply bg-gray-800;
+}
+
+/* Button Styling */
+.submit-btn {
+  @apply px-4 py-2 bg-gray-500 text-white rounded-md transition-all duration-300 ease-in-out shadow-md focus:outline-none focus:shadow-outline-blue;
+}
+
+/* Hover and Active States */
+.submit-btn:hover,
+.submit-btn:active {
+  @apply bg-gray-800; /* Darker background color on hover and active */
+}
+
+#contact {
+  padding: 2rem;
+}
