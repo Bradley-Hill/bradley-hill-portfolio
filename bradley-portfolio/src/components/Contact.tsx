@@ -1,5 +1,5 @@
-import { FaTwitter, FaGithub, FaInstagram } from "react-icons/fa";
-import emailjs from "emailjs/browser";
+import { FaTwitter, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import emailjs from "emailjs-com";
 import { useState } from "react";
 
 export default function Contact() {
@@ -11,22 +11,22 @@ export default function Contact() {
     e.preventDefault();
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_b6knv4a",
+        "template_cifysnn",
         e.currentTarget,
-        "YOUR_USER_ID"
+        "Cz0GNgbDcrkQ3i2_w"
       )
       .then(
         (result) => {
           console.log(result.text);
+          setName("");
+          setEmail("");
+          setMessage("");
         },
         (error) => {
           console.log(error.text);
         }
       );
-    setName("");
-    setEmail("");
-    setMessage("");
   }
 
   return (
@@ -41,13 +41,16 @@ export default function Contact() {
         <a href="https://www.instagram.com/YOUR_INSTAGRAM_HANDLE/">
           <FaInstagram />
         </a>
+        <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_HANDLE/">
+          <FaLinkedin />
+        </a>
       </div>
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name:</label>
         <input
           type="text"
           id="name"
-          name="name"
+          name="user_name"
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
@@ -56,7 +59,7 @@ export default function Contact() {
         <input
           type="email"
           id="email"
-          name="email"
+          name="user_email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
