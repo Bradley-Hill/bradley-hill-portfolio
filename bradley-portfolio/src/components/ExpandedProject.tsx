@@ -11,10 +11,16 @@ export default function ExpandedProject({
   onCollapse,
 }: ExpandedProjectProps) {
   return (
-    <div className="expanded-project">
-      <img src={project.largeImage} alt={project.title} />
-      <p>{project.longDescription}</p>
-      <button onClick={onCollapse}>Collapse</button>
+    <div className="expandedProject-container">
+      <img
+        className="expandedProject-image"
+        src={project.largeImage}
+        alt={project.title}
+      />
+      <p className="expandedProject-description">{project.longDescription}</p>
+      <button className="collapse-button" onClick={onCollapse}>
+        Collapse
+      </button>
     </div>
   );
 }
