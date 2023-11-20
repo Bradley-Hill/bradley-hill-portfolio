@@ -2,7 +2,10 @@ import "../app/styles/Testimonials.css";
 
 export default function Testimonials() {
   return (
-    <div className="testimonials-container grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+    <div
+      id="testimonials"
+      className="bg-gray-100 testimonials-container grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4"
+    >
       <div className="testimonial bg-gray-800 text-white">
         <p>
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

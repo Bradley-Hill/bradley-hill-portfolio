@@ -1,4 +1,5 @@
 import { Project } from "./Projects";
+import "../app/styles/ProjectItem.css";
 
 interface ProjectItemProps {
   project: Project;
@@ -8,8 +9,8 @@ interface ProjectItemProps {
 export default function ProjectItem({ project, onExpand }: ProjectItemProps) {
   return (
     <div className="project-item" onClick={() => onExpand(project)}>
-      <img src={project.image} alt={project.title} />
-      <p>{project.shortDescription}</p>
+      <img src={project.image} alt={project.title} className="project-image" />
+      <p className="project-description">{project.shortDescription}</p>
     </div>
   );
 }

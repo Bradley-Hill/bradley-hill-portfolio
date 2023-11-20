@@ -1,4 +1,5 @@
 import { Project } from "./Projects";
+import "../app/styles/ExpandedProject.css";
 
 interface ExpandedProjectProps {
   project: Project;
