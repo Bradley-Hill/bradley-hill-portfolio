@@ -75,7 +75,7 @@ export default function Projects() {
 
   return (
     <div id="projects" className="projects-container">
-      <h1 className="text-gray-600 font-semibold tracking-wide uppercase">
+      <h1 className="my-2 text-gray-600 font-semibold tracking-wide uppercase">
         Projects
       </h1>
       <Transition in={isExpandedProjectVisible} timeout={duration}>

@@ -49,15 +49,13 @@ form input[type="submit"] {
   @apply bg-gray-800;
 }
 
-/* Button Styling */
 .submit-btn {
   @apply px-4 py-2 bg-gray-500 text-white rounded-md transition-all duration-300 ease-in-out shadow-md focus:outline-none focus:shadow-outline-blue;
 }
 
-/* Hover and Active States */
 .submit-btn:hover,
 .submit-btn:active {
-  @apply bg-gray-800; /* Darker background color on hover and active */
+  @apply bg-gray-800;
 }
 
 #contact {
