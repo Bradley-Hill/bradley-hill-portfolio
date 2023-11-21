@@ -2,7 +2,7 @@ import { Project } from "./Projects";
 import "../app/styles/ExpandedProject.css";
 
 interface ExpandedProjectProps {
-  project: Project;
+  project: Project | null;
   onCollapse: () => void;
 }
 
@@ -10,6 +10,9 @@ export default function ExpandedProject({
   project,
   onCollapse,
 }: ExpandedProjectProps) {
+  if (!project) {
+    return null;
+  }
   return (
     <div className="expandedProject-container">
       <img

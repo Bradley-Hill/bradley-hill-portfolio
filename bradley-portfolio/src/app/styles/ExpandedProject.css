@@ -6,9 +6,9 @@
 }
 
 .expandedProject-image {
-  flex: 0 0 400px; /* Don't grow, don't shrink, fixed width of 200px */
-  height: auto; /* Keep the original aspect ratio */
-  max-width: 100%; /* Limit the size of the image */
+  flex: 0 0 400px;
+  height: auto;
+  max-width: 100%;
 }
 
 .expandedProject-description {
@@ -20,7 +20,7 @@
   @apply px-4 py-2 bg-gray-500 text-white rounded-md transition-all duration-300 ease-in-out shadow-md focus:outline-none focus:shadow-outline-blue;
 }
 
-.collapse-button:hover,
+/* .collapse-button:hover,
 .collapse-button:active {
   @apply bg-gray-800;
-}
+} */

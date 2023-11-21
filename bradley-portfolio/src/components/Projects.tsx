@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { Transition } from "react-transition-group";
 import "../app/styles/Projects.css";
 import ExpandedProject from "./ExpandedProject";
 import ProjectItem from "./ProjectItem";
@@ -39,6 +40,10 @@ const projectsData = [
 export default function Projects() {
   const [expandedProject, setExpandedProject] = useState<Project | null>(null);
 
+  useEffect(() => {
+    console.log("expandedProject changed", expandedProject);
+  }, [expandedProject]);
+
   const handleExpand = (project: Project) => {
     setExpandedProject(project);
   };
@@ -47,25 +52,52 @@ export default function Projects() {
     setExpandedProject(null);
   };
 
+  const duration = 500;
+
+  const defaultStyle = {
+    transition: `opacity ${duration}ms ease-in-out`,
+    opacity: 0,
+  };
+
+  const transitionStyles = {
+    entering: { opacity: 0 },
+    entered: { opacity: 1 },
+    exiting: { opacity: 0 },
+    exited: { opacity: 0 },
+    unmounted: { opacity: 0 },
+  };
+
   return (
     <div id="projects" className="projects-container">
       <h1 className="text-gray-600 font-semibold tracking-wide uppercase">
         Projects
       </h1>
-      {expandedProject ? (
-        <ExpandedProject
-          project={expandedProject}
-          onCollapse={handleCollapse}
-        />
-      ) : (
+      <Transition in={!!expandedProject} timeout={duration}>
+        {(state) =>
+          expandedProject && (
+            <div
+              style={{
+                ...defaultStyle,
+                ...transitionStyles[state],
+              }}
+              className="expandedProject-container"
+            >
+              <ExpandedProject
+                project={expandedProject}
+                onCollapse={handleCollapse}
+              />
+            </div>
+          )
+        }
+      </Transition>
+      {!expandedProject &&
         projectsData.map((project) => (
           <ProjectItem
             key={project.id}
             project={project}
             onExpand={handleExpand}
           />
-        ))
-      )}
+        ))}
     </div>
   );
 }
