@@ -39,6 +39,8 @@ const projectsData = [
 
 export default function Projects() {
   const [expandedProject, setExpandedProject] = useState<Project | null>(null);
+  const [isExpandedProjectVisible, setIsExpandedProjectVisible] =
+    useState(false);
 
   useEffect(() => {
     console.log("expandedProject changed", expandedProject);
@@ -46,13 +48,17 @@ export default function Projects() {
 
   const handleExpand = (project: Project) => {
     setExpandedProject(project);
+    setIsExpandedProjectVisible(true);
   };
 
   const handleCollapse = () => {
-    setExpandedProject(null);
+    setIsExpandedProjectVisible(false);
+    setTimeout(() => {
+      setExpandedProject(null);
+    }, duration);
   };
 
-  const duration = 500;
+  const duration = 300;
 
   const defaultStyle = {
     transition: `opacity ${duration}ms ease-in-out`,
@@ -72,7 +78,7 @@ export default function Projects() {
       <h1 className="text-gray-600 font-semibold tracking-wide uppercase">
         Projects
       </h1>
-      <Transition in={!!expandedProject} timeout={duration}>
+      <Transition in={isExpandedProjectVisible} timeout={duration}>
         {(state) =>
           expandedProject && (
             <div
