@@ -86,7 +86,7 @@ export default function Contact() {
             padding: 0,
           }}
         >
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="name">Your Name:</label>
           <input
             type="text"
             id="name"
@@ -95,7 +95,7 @@ export default function Contact() {
             onChange={(e) => setName(e.target.value)}
             required
           />
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email">Your Email:</label>
           <input
             type="email"
             id="email"
