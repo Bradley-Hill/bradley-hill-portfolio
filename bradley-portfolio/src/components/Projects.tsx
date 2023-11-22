@@ -34,6 +34,66 @@ const projectsData = [
     image: "/images/Spider with a droplet.jpg",
     largeImage: "/images/Spider with a droplet.jpg",
   },
+  {
+    id: 3,
+    title: "Project 3",
+    shortDescription:
+      "This is a short description of Project 3. lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+    longDescription:
+      "This is a long description of Project 3.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam similique sint perferendis ratione amet dolore voluptatem alias exercitationem voluptates quos. Laudantium dolor earum ratione alias, vero, temporibus similique, atque unde natus in labore! Animi magnam, eligendi distinctio placeat, nihil quas ducimus laboriosam suscipit, dignissimos est repellendus dolore accusamus ipsa rem!",
+    image: "/images/first meow.jpg",
+    largeImage: "/images/first meow.jpg",
+  },
+  {
+    id: 4,
+    title: "Project 4",
+    shortDescription:
+      "This is a short description of Project 4. lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+    longDescription:
+      "This is a long description of Project 4.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam similique sint perferendis ratione amet dolore voluptatem alias exercitationem voluptates quos. Laudantium dolor earum ratione alias, vero, temporibus similique, atque unde natus in labore! Animi magnam, eligendi distinctio placeat, nihil quas ducimus laboriosam suscipit, dignissimos est repellendus dolore accusamus ipsa rem!",
+    image: "/images/Fox Stretch.jpg",
+    largeImage: "/images/liquid sunset .jpg",
+  },
+  {
+    id: 5,
+    title: "Project 5",
+    shortDescription:
+      "This is a short description of Project 5. lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+    longDescription:
+      "This is a long description of Project 5.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam similique sint perferendis ratione amet dolore voluptatem alias exercitationem voluptates quos. Laudantium dolor earum ratione alias, vero, temporibus similique, atque unde natus in labore! Animi magnam, eligendi distinctio placeat, nihil quas ducimus laboriosam suscipit, dignissimos est repellendus dolore accusamus ipsa rem!",
+    image: "/images/Spiderman.jpg",
+    largeImage: "/images/Spiderman.jpg",
+  },
+  {
+    id: 6,
+    title: "Project 6",
+    shortDescription:
+      "This is a short description of Project 6. lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+    longDescription:
+      "This is a long description of Project 6.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam similique sint perferendis ratione amet dolore voluptatem alias exercitationem voluptates quos. Laudantium dolor earum ratione alias, vero, temporibus similique, atque unde natus in labore! Animi magnam, eligendi distinctio placeat, nihil quas ducimus laboriosam suscipit, dignissimos est repellendus dolore accusamus ipsa rem!",
+    image: "/images/Daft Punk.jpg",
+    largeImage: "/images/Daft Punk.jpg",
+  },
+  {
+    id: 7,
+    title: "Project 7",
+    shortDescription:
+      "This is a short description of Project 7. lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+    longDescription:
+      "This is a long description of Project 7.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam similique sint perferendis ratione amet dolore voluptatem alias exercitationem voluptates quos. Laudantium dolor earum ratione alias, vero, temporibus similique, atque unde natus in labore! Animi magnam, eligendi distinctio placeat, nihil quas ducimus laboriosam suscipit, dignissimos est repellendus dolore accusamus ipsa rem!",
+    image: "/images/puppy.jpg",
+    largeImage: "/images/puppy.jpg",
+  },
+  {
+    id: 8,
+    title: "Project 8",
+    shortDescription:
+      "This is a short description of Project 8. lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
+    longDescription:
+      "This is a long description of Project 8.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam similique sint perferendis ratione amet dolore voluptatem alias exercitationem voluptates quos. Laudantium dolor earum ratione alias, vero, temporibus similique, atque unde natus in labore! Animi magnam, eligendi distinctio placeat, nihil quas ducimus laboriosam suscipit, dignissimos est repellendus dolore accusamus ipsa rem!",
+    image: "/images/twitch plays Pokemon.png",
+    largeImage: "/images/twitch plays Pokemon.png",
+  },
   // More projects...
 ];
 
@@ -75,8 +135,8 @@ export default function Projects() {
 
   return (
     <div id="projects" className="projects-container">
-      <h1 className="my-2 text-gray-600 font-semibold tracking-wide uppercase">
-        Projects
+      <h1 className="my-2 text-gray-600 font-extrabold tracking-wide uppercase">
+        My Projects
       </h1>
       <Transition in={isExpandedProjectVisible} timeout={duration}>
         {(state) =>
