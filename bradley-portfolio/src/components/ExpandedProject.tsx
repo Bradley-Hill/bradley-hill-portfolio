@@ -21,6 +21,9 @@ export default function ExpandedProject({
         alt={project.title}
       />
       <p className="expandedProject-description">{project.longDescription}</p>
+      <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+        <button className="github-button">View on GitHub</button>
+      </a>
       <button className="collapse-button" onClick={onCollapse}>
         Collapse
       </button>
