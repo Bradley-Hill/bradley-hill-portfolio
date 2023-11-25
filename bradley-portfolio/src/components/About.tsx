@@ -12,12 +12,12 @@ export default function About() {
             My Journey towards becoming a Junior Fullstack Developer
           </h4>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            Greetings! I'm Bradley Hill, and I'm thrilled to present my Next.js
-            portfolio project, showcasing my tech journey from the 2021 Covid-19
-            lockdown to 9 months at Ada Tech School in Nantes. Proficient in
-            HTML/CSS, JavaScript, TypeScript, and frameworks like Vue/React/Next
-            and Nuxt, I've expanded into PHP, Java, SQL, Python, and computer
-            science fundamentals.
+            Salutations! I'm Bradley Hill, and I'm thrilled to present my
+            Next.js portfolio project, showcasing my tech journey from the 2020
+            Covid-19 lockdown to 9 months at Ada Tech School in Nantes.
+            Proficient in HTML/CSS, JavaScript/TypeScript, and frameworks like
+            Vue/React/Next and Nuxt, I've expanded into PHP, Java, SQL, Python,
+            and computer science fundamentals.
           </p>
 
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
@@ -25,12 +25,14 @@ export default function About() {
             collaborative projects, providing me with invaluable insights into
             teamworking in a new environment and the different professional
             methodologies. This contrasts with my earlier self-study and allows
-            me the opportunity to apply my skills in new settings.
+            me the opportunity to apply my skills in new settings and to learn
+            from others and their different approaches.
           </p>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            Beyond tech, you'll find me immersed in gardening and exploring
-            fantasy and science-fiction books. Let's connect and discuss how I
-            can bring my skills and passion to your team!
+            Beyond tech, you'll find me tending to my balcony garden and indoor
+            plants and reading, especially fantasy and science-fiction books and
+            graphic novels. Let's connect and discuss how I can bring my skills
+            and passion to your team!
           </p>
           <h6 className="mt-2  leading-8 font-bold tracking-tight text-gray-900 sm:text-2xl">
             Feel free to explore my completed projects and don't hesitate to

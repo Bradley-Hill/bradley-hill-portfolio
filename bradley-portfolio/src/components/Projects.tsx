@@ -22,8 +22,8 @@ const projectsData = [
       "This project is a simple implementation of the classic game Rock,Paper,Scissors, made using JavaScript.",
     longDescription:
       "This was one of the first of my efforts to create a working program with JavaScript, and despite its very rudimentary nature, I am still proud of it. I was able to create a working program that could take user input and use it to generate a random computer choice, and then compare the two to determine a winner. I was also able to create a simple UI to display the results of the game. I learned a lot about the basics of JavaScript while working on this project, and it was a great introduction to the language.",
-    image: "/images/Seen birdsong.jpg",
-    largeImage: "/images/Seen birdsong.jpg",
+    image: "/images/code2.jpg",
+    largeImage: "/images/code2.jpg",
     githubLink: "https://github.com/Bradley-Hill/rock-paper-scissors",
   },
   {
