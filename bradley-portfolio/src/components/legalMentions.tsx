@@ -3,7 +3,6 @@ import React from "react";
 const LegalMentions = () => (
   <div
     style={{
-      position: "fixed",
       bottom: 0,
       width: "100%",
       backgroundColor: "#f8f9fa",

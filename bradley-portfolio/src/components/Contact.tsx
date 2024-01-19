@@ -45,7 +45,10 @@ export default function Contact() {
     <>
       <div
         className="lg:text-center"
-        style={{ marginBottom: "1rem", textAlign: "center" }}
+        style={{
+          marginBottom: "2rem",
+          textAlign: "center",
+        }}
       >
         <h2 className="text-4xl text-gray-600 font-bold tracking-wide uppercase">
           Socials
